@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABC College - Shaping Futures</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --dark: #0a2d5e;
+      --light: #f8f9fa;
+    }
+    body { font-family: 'Segoe UI', sans-serif; }
+    .navbar { background: var(--dark); }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+      color: red;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .gallery img {
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+    .gallery img:hover { transform: scale(1.08); }
+    footer { background: var(--dark); color: white; }
+    .navbar-brand img{
+        border-radius: 50%;
+        width:45%;
+        height: 40%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="bro.png" alt="Logo" height="45">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Home -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 class="display-3 fw-bold"> SHREE VISHWA NATH PG COLLEGE KALAN SULTANPUR</h1>
+      <p class="lead my-4">Excellence in Education | Innovation | Future Ready</p>
+      <a href="#contact" class="btn btn-lg btn-primary">Enquire Now</a>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Campus Gallery</h2>
+      <div class="row g-4 gallery">
+        <div class="col-md-4"><img src="nandini.jpg" class="img-fluid rounded" alt="Main Building"></div>
+        <div class="col-md-4"><img src="https://images.unsplash.com/photo-1562774053-701939374585?w=500" class="img-fluid rounded" alt="Library"></div>
+        <div class="col-md-4"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=500" class="img-fluid rounded" alt="Lab"></div>
+        <div class="col-md-4"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500" class="img-fluid rounded" alt="Classroom"></div>
+        <div class="col-md-4"><img src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?w=500" class="img-fluid rounded" alt="Ground"></div>
+        <div class="col-md-4"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500" class="img-fluid rounded" alt="Event"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Get in Touch</h2>
+      <div class="row">
+        <div class="col-lg-5 mb-4">
+          <h4>SHREE VISHWA NATH PG COLLEGE KALAN SULTANPUR</h4>
+          <p>456 Knowledge Park, Lucknow, Uttar Pradesh 226001</p>
+          <p><i class="fas fa-phone"></i> +91 9529750237</p>
+          <p><i class="fas fa-envelope"></i> info@abccollege.edu.in</p>
+        </div>
+        <div class="col-lg-7">
+          <form>
+            <div class="mb-3"><input type="text" class="form-control" placeholder="Your Name" required></div>
+            <div class="mb-3"><input type="email" class="form-control" placeholder="Your Email" required></div>
+            <div class="mb-3"><textarea class="form-control" rows="5" placeholder="Your Message" required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <p>&copy; 2026 ABC College. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
